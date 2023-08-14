@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQueryMobileHomePage練習</title>
+    <link rel="stylesheet" href="../themes/themetest.min.css">
+    <link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css">
+    
+    
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script><!--引用版本要1.11.1主題才能使用-->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <section data-role="page" id="page1" data-theme="d">
+        <header data-role="header" data-position="fixed">
+            <h1>Moody Blues</h1>
+        </header>
+        <article data-role="main" class="ui-content">
+            <div>
+                <img src="photo(1)2448x3264.jpg" width="100%">
+                <h2 style="color:cadetblue">Green Day</h2>
+                <p style="color:aqua">All roads lead to Rome.</p>
+                <p>落花飛到美人鬘上，停一刻又隨著春風去了。
+                    落花、美人、春風同是無意中相遇。</p>
+                <p>人們散了後的鞦韆，
+                    閒掛著一輪明月。</p>
+            </div>
+            <div class="ui-grid-b"><!--grid網格設計-->
+                <div class="ui-block-a">
+                    <a href="#popup1" data-rel="popup" data-position-to="window" data-transition="fade">
+                        <img class="popphoto" src="photo(4)1280x848.jpg" style="width:100%">
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#popup2" data-rel="popup" data-position-to="window" data-transition="fade">
+                        <img class="popphoto" src="photo(2)4912x3264.jpg" style="width:100%">
+                    </a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#popup3" data-rel="popup" data-position-to="window" data-transition="fade">
+                        <img class="popphoto" src="photo(3)1500x997.jpg" style="width:100%">
+                    </a>
+                </div>
+            </div>
+            <div data-role="popup" id="popup1" data-corner="false"><!--popup和原圖連結，popup中一樣要放置圖片，差別在設定最大寬度或高度-->
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <img class="popphoto" src="photo(4)1280x848.jpg" style="max-height: 512px;">
+            </div>
+            <div data-role="popup" id="popup2" data-corner="false">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><!--ui-btn-right讓按鈕不佔一行-->
+                <img class="popphoto" src="photo(2)4912x3264.jpg" style="max-height: 512px;">
+            </div>
+            <div data-role="popup" id="popup3" data-corner="false">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <img class="popphoto" src="photo(3)1500x997.jpg" style="max-height:512px;">
+            </div>
+        </article>
+        <footer data-role="footer" data-position="fixed">
+            <navbar data-role="navbar" data-mini="true">
+                <ul>
+                    <li><a href="jQueryMobileHomePage練習.html" data-icon="home" class="ui-class-active ui-btn-active" data-ajax="false" rel="external">Home</a></li>
+                    <li><a href="jQueryMobileItemsPage練習.html" data-icon="bullets" class="ui-class-active ui-btn-active" data-ajax="false" rel="external">Items</a></li>
+                    <li><a href="jQueryMobileContactPage練習.html" data-icon="phone" class="ui-class-active ui-btn-active" data-ajax="false" rel="external">Contact</a></li>
+                </ul>
+            </navbar> 
+
+        </footer> 
+    </section>
+</body>
+</html>

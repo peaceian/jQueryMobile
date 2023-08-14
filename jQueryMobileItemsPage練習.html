@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQueryMobileHomePage練習</title>
+    <link rel="stylesheet" href="../themes/themetest.min.css">
+    <link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css">
+    
+    
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script><!--引用版本要1.11.1主題才能使用-->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <section data-role="page" id="page2" data-theme="b">
+        <header data-role="header" data-position="fixed">
+            <h1>Moody Blues</h1>
+        </header>
+        <article data-role="main" class="ui-content">
+            <div>
+                <ul data-role="listview" data-inset="true" data-split-theme="a">
+                    <li data-role="list-divider">Sun Glasses</li>
+                    <li><a href="#purchase1" data-rel="popup" data-transition="pop">
+                        <img src="glasses1.jpg">
+                        <h2>細黑框大鏡片漸層色調</h2>
+                        <p>Classical, Noir</p></a>
+                    </li>
+                    <li><a href="#purchase2" data-rel="popup" data-transition="pop">
+                        <img src="glasses2.jpg">
+                        <h2>白鏡框黃色鏡片撞色款</h2>
+                        <p>Cool Young, Yellow</p></a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-inset="true" data-split-theme="b">
+                    <li data-role="list-divider">Sun Glasses(Metalmade)</li>
+                    <li><a href="#purchase3" data-rel="popup" data-transition="pop">
+                        <img src="glasses3.jpg">
+                        <h2>金屬色鏡片鏡框低調奢華</h2>
+                        <p>Chill, Metal</p></a>
+                    </li>
+                    <li><a href="#purchase4" data-rel="popup" data-transition="pop">
+                        <img src="glasses4.jpg">
+                        <h2>童心翻玩漸層色調</h2>
+                        <p>Young, Metal, Blue</p></a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="popup" id="purchase1" class="ui-content" style="max-width:340px; padding-bottom: 2em;">
+                <img src="glasses1.jpg" style="max-height: 512px;">
+                <h3>購買資訊</h3>
+                <p>購買優惠，不要錯過。</p>
+                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-icon-left ui-btn-inline ui-mini">$1099</a>
+                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">再想想</a>
+            </div>
+            <div data-role="popup" id="purchase2" class="ui-content" style="max-width:340px; padding-bottom: 2em;">
+                <img src="glasses2.jpg" style="max-height: 512px;">
+                <h3>購買資訊</h3>
+                <p>購買優惠，不要錯過。</p>
+                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-icon-left ui-btn-inline ui-mini">$899</a>
+                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">再想想</a>
+            </div>
+            <div data-role="popup" id="purchase3" class="ui-content" style="max-width: 340px;padding-bottom: 2em;">
+                <img src="glasses3.jpg" style="max-height: 512px;">
+                <h3>購買資訊</h3>
+                <p>購買優惠，不要錯過。</p>
+                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-icon-left ui-btn-inline ui-mini">$1099</a>
+                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">再想想</a>
+            </div>
+            <div data-role="popup" id="purchase4" class="ui-content" style="max-width: 340px;padding-bottom: 2em;">
+                <img src="glasses4.jpg" style="max-height: 512px;">
+                <h3>購買資訊</h3>
+                <p>購買優惠，不要錯過。</p>
+                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-icon-left ui-btn-inline ui-mini">$1099</a>
+                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">再想想</a>
+            </div>
+        </article>
+        <footer data-role="footer" data-position="fixed">
+            <navbar data-role="navbar" data-mini="true">
+                <ul>
+                    <li><a href="jQueryMobileHomePage練習.html" data-icon="home" class="ui-class-active ui-btn-active" data-ajax="false" rel="external">Home</a></li>
+                    <li><a href="jQueryMobileItemsPage練習.html" data-icon="bullets" class="ui-class-active ui-btn-active" data-ajax="false" rel="external">Items</a></li>
+                    <li><a href="jQueryMobileContactPage練習.html" data-icon="phone" class="ui-class-active ui-btn-active" data-ajax="false" rel="external">Contact</a></li>
+                </ul>
+            </navbar> 
+
+        </footer> 
+    </section>
+</body>
+</html>
